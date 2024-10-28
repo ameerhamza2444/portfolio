@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand sub-navbar" href="#" style="color: white;">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Projects</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <div class="hero-section" id="home">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
+                    <div class="hero-left">
+                        <h1 data-text="Hi, I’m HASNAIN">Hi, I’m HASNAIN</h1>
+                        <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                            data-aos-duration="1000">
+                            I’m a full-stack developer with 5 years <br> of experience using React and NodeJS. <br>
+                            Reach out if you’d like to learn more! <br>
+                        </p>
+
+                        <button class="hero-btn" id="contactBtn">Contact Me</button>
+                        <div id="contactFormPopup" class="popup-form">
+                            <div class="popup-content">
+                                <span class="close-btn">&times;</span>
+                                <h2>Contact Me</h2>
+                                <form id="contact-form">
+                                    <input type="hidden" name="contact_number" value="697483">
+                                    <input type="name" placeholder="Your name" required name="user_name">
+                                    <input type="email" placeholder="Your Email" required name="user_email">
+                                    <textarea placeholder="Your Message" required name="Message"></textarea>
+                                    <input type="submit" value="Send" class="submit-btn">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                    <div class="hero-right">
+                        <div class="cssanimation bounceInTop"> 
+
+                            <img style=" margin-left: 20px; border-radius: 100%; width: 60% ; height: 390px;"
+                                src="./WhatsApp Image 2024-10-27 at 05.42.15_3777cfd9.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- About section -->
+    <div class="about py-5" id="About">
+        <div class="container">
+            <div class="desc" style="text-align: center;">
+                <h1>ABOUT</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div class="about-img">
+                        <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                            data-aos-duration="1000" class="img-fluid"
+                            src="https://wallpapers.com/images/hd/cute-boy-cartoon-3d-ak0nvons0tanu0ak.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div data-aos="fade-down" data-aos-duration="2000" data-aos-anchor="#example-anchor"
+                        data-aos-offset="500" class="cards w-100">
+                        <div class="card d-flex mb-3">
+                            <div class="card-left">
+                                <img src="./arrow.png" alt="arrow">
+                            </div>
+                            <div class="card-right ms-3">
+                                <h3>Frontend Developer</h3>
+                                <p>I’m a front-end developer with experience in building responsive and optimized sites
+                                </p>
+                                <button class="role-read-more-btn" data-role="frontend">Read More</button>
+                            </div>
+                        </div>
+                        <div class="card d-flex mb-3">
+                            <div class="card-left">
+                                <img src="./bck.png" alt="arrow">
+                            </div>
+                            <div class="card-right ms-3">
+                                <h3>Backend Developer</h3>
+                                <p>I’m a back-end developer with experience in building responsive and optimized sites
+                                </p>
+                                <button class="role-read-more-btn" data-role="backend">Read More</button>
+                            </div>
+                        </div>
+                        <div class="card d-flex mb-3">
+                            <div class="card-left">
+                                <img src="./ui.png" alt="arrow">
+                            </div>
+                            <div class="card-right ms-3">
+                                <h3>UI Designer</h3>
+                                <p>I’m a UI designer with experience in creating user-friendly interfaces</p>
+                                <button class="role-read-more-btn" data-role="ui">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popup Form Section -->
+                <div id="uniquePopupForm" class="unique-popup-form">
+                    <div class="unique-popup-content">
+                        <span class="unique-close-btn">&times;</span>
+                        <h3 id="unique-popup-title"></h3>
+                        <p id="unique-popup-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="experience py-5 text-white" id="experience">
+        <div class="container">
+            <h1 style="text-align: center;">EXPERIENCE</h1>
+            <div class="row">
+                <!-- Skills Section -->
+                <div data-aos="fade-down" data-aos-duration="2000" class="col-lg-6 m-auto">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div
+                                class="exp-card text-center rounded-circle d-flex flex-column justify-content-center align-items-center">
+                                <img src="./html.png" alt="HTML" class="img-fluid" style="width: 50px; height: 50px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div
+                                class="exp-card text-center rounded-circle d-flex flex-column justify-content-center align-items-center">
+                                <img src="./image 6.png" alt="CSS" class="img-fluid" style="width: 50px; height: 50px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div
+                                class="exp-card text-center rounded-circle d-flex flex-column justify-content-center align-items-center">
+                                <img src="./image 7.png" alt="React" class="img-fluid"
+                                    style="width: 50px; height: 50px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div
+                                class="exp-card text-center rounded-circle d-flex flex-column justify-content-center align-items-center">
+                                <img src="./image 8.png" alt="React" class="img-fluid"
+                                    style="width: 50px; height: 50px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div
+                                class="exp-card text-center rounded-circle d-flex flex-column justify-content-center align-items-center">
+                                <img src="./image 11.png" alt="React" class="img-fluid"
+                                    style="width: 50px; height: 50px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div
+                                class="exp-card text-center rounded-circle d-flex flex-column justify-content-center align-items-center">
+                                <img src="./image 15.png" alt="React" class="img-fluid"
+                                    style="width: 50px; height: 50px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards Section -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div data-aos="fade-down" data-aos-duration="2000" data-aos-anchor="#example-anchor"
+                        data-aos-offset="500" class="cards w-100">
+                        <div class="card d-flex mb-3">
+                            <div class="card-left">
+                                <img src="./arrow.png" alt="arrow">
+                            </div>
+                            <div class="card-right ms-3">
+                                <h3>Frontend Developer</h3>
+                                <p>I’m a front-end developer with experience in building responsive and optimized sites
+                                </p>
+                                <button class="role-read-more-btn" data-role="frontend">Read More</button>
+                            </div>
+                        </div>
+                        <div class="card d-flex mb-3">
+                            <div class="card-left">
+                                <img src="./bck.png" alt="arrow">
+                            </div>
+                            <div class="card-right ms-3">
+                                <h3>Backend Developer</h3>
+                                <p>I’m a back-end developer with experience in building responsive and optimized sites
+                                </p>
+                                <button class="role-read-more-btn" data-role="backend">Read More</button>
+                            </div>
+                        </div>
+                        <div class="card d-flex mb-3">
+                            <div class="card-left">
+                                <img src="./ui.png" alt="arrow">
+                            </div>
+                            <div class="card-right ms-3">
+                                <h3>UI Designer</h3>
+                                <p>I’m a UI designer with experience in creating user-friendly interfaces</p>
+                                <button class="role-read-more-btn" data-role="ui">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popup Form Section -->
+                <div id="uniquePopupForm" class="unique-popup-form">
+                    <div class="unique-popup-content">
+                        <span class="unique-close-btn">&times;</span>
+                        <h3 id="unique-popup-title"></h3>
+                        <p id="unique-popup-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects py-5" id="project">
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-down" data-aos-duration="2000" class="col-lg-4 mb-4">
+                    <div class="card h-100 bg-primary text-white">
+                        <a href="https://mens-collections.netlify.app/" target="_blank">
+                            <img height="278px" src="./Screenshot 2024-10-27 045102.png" class="card-img-top"
+                                alt="Project B">
+
+                            <div style="background-color: #00215a;" class="card-body">
+                                <h5 style="color: white;" class="card-title">Project A</h5>
+                                <p style="color: white;" class="card-text">This project focuses on building a modern web
+                                    application with advanced
+                                    features.</p>
+                            </div>
+                        </a>
+                        <div style="background-color: #00215a;" class="card-footer d-flex justify-content-between">
+                            <span class="badge bg-dark">HTML</span>
+                            <span class="badge bg-dark">CSS</span>
+                            <span class="badge bg-dark">JAVASCRIPT</span>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="2000" class="col-lg-4 mb-4">
+                    <div class="card h-100 bg-primary text-white">
+                        <a href="https://modern-builds.netlify.app/" target="_blank">
+                            <img style="height: 278PX;" src="./MODERN.png" class="card-img-top" alt="Project B">
+
+                            <div style="background-color: #00215a;" class="card-body">
+                                <h5 style="color: white;" class="card-title">Project B</h5>
+                                <p style="color: white;" class="card-text">This project focuses on building a modern web
+                                    application with advanced
+                                    features.</p>
+                            </div>
+                        </a>
+                        <div style="background-color: #00215a;" class="card-footer d-flex justify-content-between">
+                            <span class="badge bg-dark">HTML</span>
+                            <span class="badge bg-dark">BOOTSTRAP</span>
+                            <span class="badge bg-dark">JAVASCRIPT</span>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="2000" class="col-lg-4 mb-4">
+                    <div class="card h-100 bg-primary text-white">
+                        <a href="https://my-juices.netlify.app/" target="_blank">
+                            <img style="height: 278PX;" src="./JUICE.png" class="card-img-top" alt="Project B">
+
+                            <div style="background-color: #00215a;" class="card-body">
+                                <h5 style="color: white;" class="card-title">Project C</h5>
+                                <p style="color: white;" class="card-text">This project focuses on building a modern web
+                                    application with advanced
+                                    features.</p>
+                            </div>
+                        </a>
+                        <div style="background-color: #00215a;" class="card-footer d-flex justify-content-between">
+                            <span class="badge bg-dark">HTML</span>
+                            <span class="badge bg-dark">BOOTSTRAP</span>
+                            <span class="badge bg-dark">JAVASCRIPT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer py-5 text-white" style="background-color: #19376D;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-6 col-sm-12 col-12mb-4 mb-md-0">
+                    <h1 class="display-5">Contact</h1>
+                    <p class="lead">Feel free to reach out!</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fa-solid fa-envelope me-3"></i>
+                            <a href="https://hr8560674@gmail.com" target="_blank">
+                                <span style="color: white;">hr8560674@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fa-brands fa-linkedin-in me-3"></i>
+                            <a href="https://www.linkedin.com/in/hasnain-raza-089b8930a/" target="_blank">
+                                <span style="color: white;">https://www.linkedin.com</span>
+                            </a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="https://www.instagram.com/hasnain_raza5764/?next=%2F" target="_blank">
+                                <span style="margin-left: 15PX; color: white;">instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+
+
+        const contactBtn = document.getElementById('contactBtn');
+        const contactFormPopup = document.getElementById('contactFormPopup');
+        const closeBtn = document.querySelector('.close-btn');
+
+
+        contactBtn.addEventListener('click', function () {
+            contactFormPopup.classList.add('show');
+            document.body.classList.add('noscroll');
+        });
+
+
+        closeBtn.addEventListener('click', function () {
+            contactFormPopup.classList.remove('show');
+            setTimeout(() => {
+                document.body.classList.remove('noscroll');
+            }, 500);
+        });
+
+
+        window.addEventListener('click', function (event) {
+            if (event.target === contactFormPopup) {
+                contactFormPopup.classList.remove('show');
+                setTimeout(() => {
+                    document.body.classList.remove('noscroll');
+                }, 500);
+            }
+        });
+
+    </script>
+
+    <script>
+
+        document.querySelectorAll('.role-read-more-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const popup = document.getElementById('uniquePopupForm');
+                const role = this.getAttribute('data-role');
+                const title = document.getElementById('unique-popup-title');
+                const description = document.getElementById('unique-popup-description');
+
+
+                if (role === 'frontend') {
+                    title.textContent = 'Frontend Developer';
+                    description.textContent = 'As a Frontend Developer, I specialize in creating responsive, user-friendly websites and applications. I have expertise in HTML, CSS, JavaScript, and frameworks like React and Angular. My focus is on optimizing performance, ensuring cross-browser compatibility, and enhancing user interaction. I enjoy working closely with designers and back-end developers to bring creative ideas to life while maintaining a seamless user experience.';
+                } else if (role === 'backend') {
+                    title.textContent = 'Backend Developer';
+                    description.textContent = 'As a Backend Developer, I focus on building robust, scalable server-side systems that support smooth front-end interactions. My experience includes working with server technologies like Node.js, Python, and PHP, and I am proficient in managing databases like MySQL, MongoDB, and PostgreSQL. I prioritize security, data management, and optimizing server performance to ensure the reliability of web applications. Working with RESTful APIs and cloud services is a crucial part of my expertise.';
+                } else if (role === 'ui') {
+                    title.textContent = 'UI Designer';
+                    description.textContent = 'As a UI Designer, I am passionate about creating visually appealing and intuitive interfaces. I have a strong eye for design and focus on user-centered approaches. My work revolves around designing layouts, choosing the right color schemes, and creating interactive elements that enhance the overall user experience. I collaborate closely with UX designers and developers to ensure that the final product is both aesthetically pleasing and functionally seamless. I also prioritize accessibility and modern design trends.';
+                }
+
+
+                popup.style.display = 'flex';
+                document.body.classList.add('popup-open');
+            });
+        });
+
+
+        document.querySelector('.unique-close-btn').addEventListener('click', function () {
+            const popup = document.getElementById('uniquePopupForm');
+            popup.style.display = 'none';
+            document.body.classList.remove('popup-open');
+        });
+
+
+    </script>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Contact Form</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init({
+                    publicKey: "tZY8DFgOFslGLJaTD",
+                });
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_d3skji4', 'template_q13llpb', this)
+                        .then(() => {
+                            console.log('SUCCESS!');
+                        }, (error) => {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+</body>
+
+</html>
